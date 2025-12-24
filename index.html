@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>YASİN ERGÜN | SİBER İSTİHBARAT PORTALI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="overlay"></div>
+
+    <div class="app-frame">
+        <aside class="sidebar">
+            <div class="admin-profile">
+                <div class="avatar-glow"></div>
+                <h3>YASİN ERGÜN</h3>
+                <span class="rank">SİSTEM MİMARI</span>
+            </div>
+            <nav class="side-menu">
+                <button onclick="changeSection('hack-center')" class="active">SİBER SIZMA</button>
+                <button onclick="changeSection('about')">HAKKINDA</button>
+                <button onclick="changeSection('manual')">KILAVUZ</button>
+            </nav>
+            <div class="sys-data">
+                <p>SERVER: <span class="online">AKTİF</span></p>
+                <p>IP: 192.168.1.104</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="system-title">YASIN ERGUN // CYBER-OPS V12</div>
+                <div class="live-clock" id="clock">00:00:00</div>
+            </header>
+
+            <section id="hack-center" class="content-block active">
+                <div class="glass-card main-op">
+                    <h2>INSTAGRAM VERİ ANALİZ MERKEZİ</h2>
+                    <p>Güvenli hat üzerinden hedef profile sızma işlemi başlatın.</p>
+                    
+                    <div class="input-wrapper">
+                        <input type="text" id="target-id" placeholder="@kullanici_adi giriniz...">
+                        <button onclick="startInfiltration()" class="btn-primary">VERİLERİ ÇEK</button>
+                    </div>
+
+                    <div class="process-window">
+                        <div class="terminal-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            PROSES GÜNLÜĞÜ
+                        </div>
+                        <div id="output-log" class="output-text">
+                            Bekleniyor... Operasyon için bir hedef tanımlayın.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="content-block">
+                <div class="glass-card">
+                    <h2>GELİŞTİRİCİ HAKKINDA</h2>
+                    <p>Bu platform, <strong>Yasin Ergün</strong> tarafından ileri düzey web teknolojileri kullanılarak 1 aylık bir çalışma sonucunda geliştirilmiştir. Tasarımda modern siber güvenlik estetiği ve kullanıcı deneyimi ön planda tutulmuştur.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
